@@ -5,11 +5,13 @@
 
 
 @font-face {
-  font-family: 'CamogliDemo';
-  src: url('/assets/webfonts/CamogliDemoRegular.ttf') format('truetype');
+  font-family: 'manrope';
+  src: url('/macswebsite/assets/webfonts/Manrope-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
+
+
 
 
 :root {
@@ -57,7 +59,7 @@ body {
 
 body {
   font-size: 16px;
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
 }
 body.bg-dark-5 {
   background: #121212;
@@ -69,7 +71,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 700;
   margin-bottom: 15px;
 }
@@ -235,7 +237,7 @@ video {
   width: 100%;
 }
 .section-title-4 > span {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.05em;
@@ -246,7 +248,7 @@ video {
 }
 .section-title-4 h2 {
   margin-bottom: 5px;
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.4;
@@ -454,7 +456,7 @@ video {
   }
 }
 .header-area2.style-2 .header-btn a {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -702,7 +704,7 @@ video {
   text-transform: capitalize;
   padding: 32px 20px;
   position: relative;
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 500;
   font-size: 14px;
   transition: all 0.5s ease-out 0s;
@@ -1078,7 +1080,7 @@ video {
 }
 
 .primary-btn3 {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -1116,7 +1118,7 @@ video {
 }
 
 .primary-btn4 {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 600;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -2088,8 +2090,8 @@ video {
   width: 100%;
 }
 .banner-area4 .banner-content h1 {
-  font-family: CamogliDemoRegular;
-  font-weight: 600;
+  font-family: manrope;
+  font-weight: 900;
   font-size: 70px;
   line-height: 1.3;
   letter-spacing: 0.03em;
@@ -3580,7 +3582,7 @@ video {
   margin-bottom: 10px;
 }
 .home4-services-section .single-service-card .services-content h3 a {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 600;
   font-size: 27px;
   letter-spacing: 0.02em;
@@ -5091,7 +5093,7 @@ video {
   }
 }
 .home3-success-stories-area .success-storie-card .success-content span {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 0.05em;
@@ -7313,7 +7315,7 @@ footer .footer-top .footer-top-content .footer-contect .icon svg {
   fill: #FFFFFF;
 }
 footer .footer-top .footer-top-content .footer-contect .content span {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 400;
   font-size: 13px;
   letter-spacing: 0.03em;
@@ -7325,7 +7327,7 @@ footer .footer-top .footer-top-content .footer-contect .content h6 {
   margin-bottom: 0;
 }
 footer .footer-top .footer-top-content .footer-contect .content h6 a {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 500;
   font-size: 18px;
   letter-spacing: 0.03em;
@@ -7345,7 +7347,7 @@ footer .footer-widget .footer-contact h4 {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 500;
   font-size: 23px;
   letter-spacing: 0.03em;
@@ -7363,7 +7365,7 @@ footer .footer-widget .footer-contact h6 {
   margin-bottom: 20px;
 }
 footer .footer-widget .footer-contact a {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -7413,7 +7415,7 @@ footer .footer-widget .widget-title {
   margin-bottom: 25px;
 }
 footer .footer-widget .widget-title h4 {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 600;
   font-size: 25px;
   letter-spacing: 0.03em;
@@ -7432,7 +7434,7 @@ footer .footer-widget .menu-container ul li:last-child {
   margin-bottom: 0;
 }
 footer .footer-widget .menu-container ul li a {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.02em;
@@ -7461,7 +7463,7 @@ footer .footer-btm .footer-btn-content {
 }
 footer .footer-btm .footer-btn-content .copyright-area p {
   margin-bottom: 0;
-  font-family:CamogliDemoRegular;
+  font-family:manrope;
   font-weight: 400;
   font-size: 14px;
   color: #E4E4E4;
@@ -10786,7 +10788,7 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
 }
 
 .contact-page-wrap .contact-content > span {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.05em;
@@ -10796,7 +10798,7 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
 }
 .contact-page-wrap .contact-content h2 {
   margin-bottom: 5px;
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 700;
   font-size: 42px;
   line-height: 1.4;
@@ -10919,7 +10921,7 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 .contact-page-wrap .contact-form-wrap .form-tltle h5 {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 500;
   font-size: 22px;
   color: #221429;
@@ -10935,7 +10937,7 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   }
 }
 .contact-page-wrap .contact-form-wrap .contact-form form label {
-  font-family: CamogliDemoRegular;
+  font-family: manrope;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
