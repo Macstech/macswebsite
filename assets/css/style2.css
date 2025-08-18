@@ -3451,7 +3451,7 @@ video {
 }
 .home4-about-section .about-left-img-wrap .big-img::after {
   content: "";
-  background: linear-gradient(180deg, rgba(34, 38, 42, 0.6) 0%, rgba(34, 38, 42, 0.1) 100%);
+  /* background: linear-gradient(180deg, rgba(34, 38, 42, 0.6) 0%, rgba(34, 38, 42, 0.1) 100%); */
   /* border-radius: 190px; */
   position: absolute;
   left: 0;
