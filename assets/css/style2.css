@@ -26,7 +26,7 @@
   --border-color: #232323;
   --black-soft-color: #7e7e7e;
 }
-
+.header-area2.sticky.scrolled
 .tt-style-switch {
   height: 34px;
   width: 34px;
@@ -546,7 +546,7 @@ video {
 
 .header-area2.sticky.scrolled {
   background-color: transparent;
-  backdrop-filter: blur(5px); /* Optional: Glass effect */
+  backdrop-filter: blur(5px);
 }
 @keyframes smooth-header {
   0% {
@@ -3556,6 +3556,11 @@ video {
 }
 .home4-services-section .view-btn {
   padding-top: 70px;
+}
+
+.header-area2.sticky.scrolled {
+  background-color: none;
+  backdrop-filter: none;
 }
 .home4-services-section .single-service-card {
   /* background-image: url(../img/home-4/home4-service-bg.png), linear-gradient(#17181C, #17181C); */
