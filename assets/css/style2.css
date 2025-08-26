@@ -545,8 +545,8 @@ video {
 }
 
 .header-area2.sticky.scrolled {
-  background-color: transparent;
-  backdrop-filter: blur(5px);
+  /* background-color: transparent;
+  backdrop-filter: blur(5px); */
 }
 @keyframes smooth-header {
   0% {
