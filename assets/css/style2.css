@@ -11148,3 +11148,299 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
   border-radius: 6px;
   color: #333;
 }
+
+
+.banner-area{
+    background-color: #000;
+    padding: 60px 0;
+    min-height: 400;
+    min-height: 300px;
+}
+
+.banner-content {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+ 
+
+}
+
+.banner-content h2{
+    color: #fff;
+    line-height: 1.2;
+}
+
+
+.banner-content p{
+    color: #fff;
+    font-size: medium;
+    line-height: 1.2;
+}
+
+.banner-area4 .banner-content button {
+    margin-bottom: 20px !important;
+}
+
+
+.content-wrapper {
+    max-width: 750px; /* Fixed width that won't overlap card */
+    padding-right: 0;
+}
+
+.learning-section {
+    padding: 60px 0 40px 0;
+    background-color: #fff;
+}
+
+.content-wrapper {
+    max-width: 750px; /* Prevent overlap with fixed card */
+}
+
+.learning-box {
+    border: 1px solid #d1d7dc;
+    border-radius: 8px;
+    padding: 40px;
+    background-color: #fff;
+    margin-bottom: 40px;
+}
+
+.learning-box h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #1c1d1f;
+}
+
+.learning-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 40px;
+    margin-top: 20px;
+}
+
+.learning-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.learning-item i {
+    color: #1c1d1f;
+    font-size: 1rem;
+    margin-right: 12px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    font-weight: 600;
+}
+
+.learning-item p {
+    margin: 0;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    color: #1c1d1f;
+}
+
+.course-includes{
+    padding: 60px 0 40px 0;
+}
+
+
+.course-content-section {
+    padding: 40px 0;
+    background-color: #fff;
+}
+
+.content-wrapper {
+    max-width: 750px;
+}
+
+.course-content-header {
+    margin-bottom: 30px;
+}
+
+.course-content-header h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1c1d1f;
+    margin-bottom: 15px;
+}
+
+.content-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.content-stats span {
+    color: #6a6f73;
+    font-size: 0.9rem;
+}
+
+.expand-all-btn {
+    background: none;
+    border: none;
+    color: #5624d0;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.course-section {
+    border: 1px solid #d1d7dc;
+    margin-bottom: 2px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: #f7f9fa;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.section-header:hover {
+    background-color: #e8f5e8;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: #1c1d1f;
+}
+
+.chevron-icon {
+    margin-right: 12px;
+    transition: transform 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.section-header.active .chevron-icon {
+    transform: rotate(180deg);
+}
+
+.section-info {
+    color: #6a6f73;
+    font-size: 0.85rem;
+}
+
+.section-content {
+    display: none;
+    background-color: #fff;
+}
+
+.section-content.show {
+    display: block;
+}
+
+.lecture-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.lecture-item:last-child {
+    border-bottom: none;
+}
+
+.lecture-info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.lecture-icon {
+    margin-right: 12px;
+    color: #6a6f73;
+    font-size: 1rem;
+}
+
+.lecture-title {
+    color: #1c1d1f;
+    font-size: 0.9rem;
+}
+
+.lecture-actions {
+    display: flex;
+    align-items: center;
+    gap: px;
+}
+
+.preview-btn {
+    background: none;
+    border: none;
+    color: #5624d0;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 0.85rem;
+}
+
+.duration {
+    color: #6a6f73;
+    font-size: 0.85rem;
+    min-width: 40px;
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile responsiveness */
+@media (max-width: 1199px) {
+    .content-wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .learning-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    
+    .learning-box {
+        padding: 30px 20px;
+        margin-bottom: 30px;
+    }
+    
+    .learning-section {
+        padding: 40px 0 30px 0;
+    }
+    
+    .learning-box h3 {
+        font-size: 1.3rem;
+        margin-bottom: 25px;
+    }
+    
+    .learning-item p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .learning-box {
+        padding: 25px 15px;
+    }
+    
+    .learning-item i {
+        margin-right: 10px;
+    }
+}
