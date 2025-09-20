@@ -11151,8 +11151,8 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
 
 
 .banner-area{
-    background-color: #000;
-    padding: 60px 0;
+ background-color: #000;
+  padding: 60px 0;
     min-height: 400;
     min-height: 300px;
 }
@@ -11392,6 +11392,58 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
 
 
 
+.Description-section ul {
+    list-style-type: disc !important;
+    padding-left: 1.5rem;
+    margin-left: 1rem;
+}
+
+.Description-section li {
+    margin-bottom: 0.5rem;
+    display: list-item !important;
+}
+
+
+.rightside-card {
+  position: absolute;
+  top: 80px;
+  right: 80px;
+  z-index: 1000;
+}
+
+.rightside-card .card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e0e0e0;
+}
+
+.stars {
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.subscription-badge {
+  background-color: #f8f9fa;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border-left: 3px solid #6c757d;
+}
+
+.urgency-message {
+  background-color: #fff3cd;
+  padding: 8px;
+  border-radius: 4px;
+  border-left: 3px solid #ffc107;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+}
+
+.guarantees {
+  padding: 10px 0;
+  border-top: 1px solid #e9ecef;
+}
 
 
 

@@ -537,70 +537,121 @@
 <div class="Description-section">
     <div class="container">
         <div class="row">
-            <ddiv class="col-lg-12">
-                 <div class="content-wrapper">
-                          
+            <div class="col-lg-12">
+                <div class="content-wrapper">
                     <h3>Description</h3>
-                    <p>Welcome to the Complete Web Development Bootcamp, the only course you need to learn to code and become a full-stack web developer.
-                         With 150,000+ ratings and a 4.8 average, my Web Development course is one of the HIGHEST RATED courses in the history of Udemy! </p>
-
-                     <p>At 62+ hours, this Web Development course is without a doubt the most comprehensive web development course available online. 
-                        Even if you have zero programming experience, this course will take you from beginner to mastery. Here's why:</p>
-                 </div>
-            </ddiv>
+                    <p>Welcome to the Complete Web Development Bootcamp, <strong>the only course you need</strong> to learn to code and become a full-stack web developer.
+                         With 150,000+ ratings and a 4.8 average, my Web Development course is one of the HIGHEST RATED courses in the history of Udemy!</p>
+                      <br>
+                     <p>At 62+ hours, this Web Development course is without a doubt the <strong>most comprehensive</strong> web development course available online. 
+                        Even if you have <strong>zero</strong> programming experience, this course will take you from <strong>beginner to mastery</strong>. Here's why:</p>
+                    <br>    
+                    <ul>
+                        <li>The course is taught by the <strong>lead instructor</strong> at the App Brewery, London's <strong>leading in-person programming bootcamp</strong>.</li>
+                        <li>The course has been updated to be <strong>2024 ready</strong> and you'll be learning the latest tools and technologies used at large companies such as Apple, Google and Netflix.</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
+</div>
+
+<div class="rightside-card">
+  <div class="card" style="width: 20rem;">
+    <!-- Course Preview Section -->
+    <div class="card-header text-center p-3">
+      <img src="./assets/img/bacimg.jpg" class="img-fluid mb-2" alt="Course Preview" style="max-height: 120px;">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="rating">
+          <span class="h5 mb-0">4.6</span>
+          <div class="stars text-warning">
+            ★★★★★
+          </div>
+          <small class="text-muted">100+ ratings</small>
+        </div>
+        <div class="learners text-center">
+          <div class="h6 mb-0">100+</div>
+          <small class="text-muted">learners</small>
+        </div>
+      </div>
+    </div>
+
+    <!-- Offline Course Info Section -->
+    <div class="card-body">
+      <h6 class="card-title">Join Our Offline Classes</h6>
+      <p class="card-text small">
+        Learn directly from expert trainers at our institute.  
+        Hands-on training, personalized guidance, and real-world projects.
+      </p>
+    </div>
+
+    <!-- Pricing Section -->
+    <div class="card-body border-top">
+     <div class="course-details mb-3">
+        <p class="mb-1"><strong>📍 Location:</strong> Namakkal, India</p>
+        <p class="mb-1"><strong>🕒 Duration:</strong> 4 Months</p>
+        <p class="mb-1"><strong>📅 Batch Starts:</strong> 25th Sept 2025</p>
+        <p class="mb-1"><strong>👨‍🏫 Mode:</strong> Classroom Training</p>
+      </div>
+
+          <div class="highlights mb-3">
+        <p class="mb-1">✅ Industry-recognized certificate</p>
+        <p class="mb-1">✅ 100% hands-on projects</p>
+        <p class="mb-1">✅ Career guidance & resume support</p>
+        <p class="mb-1">✅ Mock interviews </p>
+      </div>
+      
+      <div class="urgency-message mb-3">
+        <small class="text-danger">Hurry! Limited seats available</small>
+      </div>
+      
+      <button class="btn btn-primary w-100 mb-2">Contact Now</button>
+      <!-- <button class="btn btn-outline-primary w-100 mb-3">Enroll Now</button> -->
+    </div>
+  </div>
 </div>
 
 
 
 <script>
-function toggleSection(header) {
-    const content = header.nextElementSibling;
-    const chevron = header.querySelector('.chevron-icon');
+function toggleSection(clickedHeader) {
+    const clickedSection = clickedHeader.closest('.course-section');
+    const clickedContent = clickedSection.querySelector('.section-content');
+    const clickedIcon = clickedHeader.querySelector('.chevron-icon');
     
-    // Toggle active class on header
-    header.classList.toggle('active');
+    // Get all sections
+    const allSections = document.querySelectorAll('.course-section');
     
-    // Toggle content visibility
-    content.classList.toggle('show');
+    // Check if clicked section is currently open
+    const isCurrentlyOpen = clickedContent.style.display === 'block';
     
-    // Animate chevron
-    if (content.classList.contains('show')) {
-        content.style.display = 'block';
-    } else {
+    // Close all sections first
+    allSections.forEach(section => {
+        const content = section.querySelector('.section-content');
+        const icon = section.querySelector('.chevron-icon');
+        
         content.style.display = 'none';
+        icon.style.transform = 'rotate(0deg)';
+        section.classList.remove('active');
+    });
+    
+    // If the clicked section wasn't open, open it
+    if (!isCurrentlyOpen) {
+        clickedContent.style.display = 'block';
+        clickedIcon.style.transform = 'rotate(90deg)';
+        clickedSection.classList.add('active');
     }
 }
 
-// Expand all sections functionality
-document.querySelector('.expand-all-btn').addEventListener('click', function() {
-    const sections = document.querySelectorAll('.section-content');
-    const headers = document.querySelectorAll('.section-header');
-    const isExpanded = this.textContent === 'Collapse all sections';
-    
-    sections.forEach((section, index) => {
-        if (isExpanded) {
-            section.classList.remove('show');
-            section.style.display = 'none';
-            headers[index].classList.remove('active');
-        } else {
-            section.classList.add('show');
-            section.style.display = 'block';
-            headers[index].classList.add('active');
-        }
+// Optional: Initialize all sections as closed on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const allSections = document.querySelectorAll('.course-section');
+    allSections.forEach(section => {
+        const content = section.querySelector('.section-content');
+        content.style.display = 'none';
     });
-    
-    this.textContent = isExpanded ? 'Expand all sections' : 'Collapse all sections';
 });
 
-// Preview button functionality
-document.querySelectorAll('.preview-btn').forEach(btn => {
-    btn.addEventListener('click', function(e) {
-        e.stopPropagation();
-        alert('Preview functionality - open video/content');
-    });
-});
 
 </script>
 
