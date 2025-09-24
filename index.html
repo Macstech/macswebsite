@@ -177,7 +177,7 @@
             <div class="row g-4 justify-content-center">
                 <!-- <h1> IT Services</h1> -->
                 <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="200ms" data-wow-duration="1500ms">
-                    <div class="single-service-card magnetic-item">
+                    <div class="single-service-card magnetic-item" onclick="window.location.href='webdevelopment.html'">
                         <div class="icon">
                             <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                                 <path
@@ -196,7 +196,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-10 wow animate fadeInUp" data-wow-delay="300ms" data-wow-duration="1500ms">
-                    <div class="single-service-card magnetic-item">
+                    <div class="single-service-card magnetic-item" onclick="window.location.href='webdevelopment.html'">
                         <div class="icon">
                             <svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1453_763)">
@@ -213,7 +213,7 @@
                                 </g>
                             </svg>
                         </div>
-                        <div class="services-content">
+                        <div class="services-content" >
                             <h3><a href="jsadvanced.html">Javascript Advanced</a></h3>
                             <p>Master advanced JavaScript concepts including ES6+, async programming, object-oriented design, DOM manipulation, and Node.js development.</p>
                            
@@ -777,6 +777,23 @@ window.addEventListener('scroll', function() {
   gtag('js', new Date());
 
   gtag('config', 'G-X86F0WCT8R');
+
+// Fix the class selector to match your HTML
+document.querySelector('.services-content').addEventListener('click', function(e) {
+    // Prevent double navigation if clicking on the <a> tag
+    if (e.target.tagName !== 'A') {
+        window.location.href = 'jsadvanced.html';
+    }
+});
+
+// Add keyboard support
+document.querySelector('.single-service-card magnetic-item').addEventListener('keypress', function(event) {
+    if (event.key === 'Enter' || event.key === ' ') {
+        window.location.href = 'jsadvanced.html';
+    }
+});
+
+
 </script>
 </body>
 
