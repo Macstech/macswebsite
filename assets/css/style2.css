@@ -347,7 +347,7 @@ video {
 }
 
 .section-content {
-  max-width: 336px;
+  max-width: 100%;
   width: 100%;
 }
 .section-content p {
@@ -11456,12 +11456,18 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
 
 
 /* Mobile responsiveness */
-@media (max-width: 1199px) {
+@media (max-width: 1000px) {
     .content-wrapper {
         max-width: 100%;
     }
 }
 
+@media (min-width: 1001px) and (max-width: 1200px) {
+    .content-wrapper {
+        max-width: 60%;
+        /* Add specific styles for this range */
+    }
+}
 @media (max-width: 768px) {
     .learning-grid {
         grid-template-columns: 1fr;
@@ -11496,20 +11502,47 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
         margin-right: 10px;
     }
 }
-/* Mobile/Tablet - Centered responsive width */
-@media (max-width: 1399px) {
+
+/* Large tablets (1024px) - adjust positioning but keep it on right */
+@media (max-width: 1100px) {
     .rightside-card {
-        position: static !important;
-        width: 90% !important; /* Responsive width */
-        max-width: 20rem !important; /* Maintains 20rem limit */
-        margin: 2rem auto !important; /* Centers horizontally */
-        top: auto !important;
-        right: auto !important;
-        left: auto !important;
+        width: 20rem !important;
+        right: 1rem !important;
+    }
+    
+    .main-content {
+        margin-right: 22rem !important; /* Adjust main content margin */
     }
 }
 
-/* Small mobile - Better fit */
+@media (max-width: 1000px) {
+    .rightside-card {
+        width: 16rem !important;
+        right: 0.5rem !important;
+    }
+    
+    .main-content {
+        margin-right: 20rem !important;
+    }
+}
+
+/* Tablet - stack the card below content */
+@media (max-width: 768px) {
+    .rightside-card {
+        position: static !important;
+        width: 90% !important;
+        margin: 2rem auto !important;
+        top: auto !important;
+        right: auto !important;
+    }
+    
+    .main-content {
+        margin-right: 0 !important; /* Remove margin on mobile */
+        max-width: 100% !important;
+    }
+}
+
+/* Mobile */
 @media (max-width: 480px) {
     .rightside-card {
         width: 95% !important;
