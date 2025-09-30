@@ -11549,3 +11549,75 @@ footer .footer-btm .footer-btn-content .footer-social ul li a:hover {
         margin: 1rem auto !important;
     }
 }
+
+
+/* Privacy Policy Paragraph Styles */
+.privacy-section {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    border-left: 4px solid #000000;
+}
+
+
+.lead{
+  color: white;
+}
+.section-title {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.paragraph-content {
+    color: #555;
+    line-height: 1.7;
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0;
+}
+
+.banner-area {
+    background: black;
+}
+
+.contact-info {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #333;
+}
+
+.contact-item i {
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .privacy-section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .section-title {
+        font-size: 1.2rem;
+    }
+    
+    .paragraph-content {
+        font-size: 0.95rem;
+    }
+    
+    .contact-details {
+        flex-direction: column;
+        gap: 1rem !important;
+    }
+}
