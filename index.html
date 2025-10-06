@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -1118,6 +1117,10 @@
                         document.getElementById('inquiryForm').reset();
                         document.getElementById('inquiryForm').classList.remove('was-validated');
                         bootstrap.Modal.getInstance(document.getElementById('inquiryModal')).hide();
+                         // Reset button state
+                        submitBtn.disabled = false;
+                        spinner.classList.add('d-none');
+                        btnText.textContent = '';
                     },
                     error: function(error) {
                         // Show error toast
@@ -1128,7 +1131,7 @@
                         // Reset button state
                         submitBtn.disabled = false;
                         spinner.classList.add('d-none');
-                        btnText.textContent = 'Submit';
+                        btnText.textContent = '';
                     }
                 });
             }, 1000);
