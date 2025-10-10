@@ -104,7 +104,7 @@
     $(document).ready(function () {
         $('#studentList').empty();
         $.ajax({
-            url: 'http://miyacloud.in/fundscheme/api/studentlist',
+            url: 'https://miyacloud.in/fundscheme/api/studentlist',
             type: 'GET',
             success: function (resp) {
                 var response = JSON.parse(resp);
@@ -169,7 +169,6 @@
                 const errorToast = new bootstrap.Toast(document.getElementById('errorToast'));
                 errorToast.show();
             },
-
         });
     });
 </script>
