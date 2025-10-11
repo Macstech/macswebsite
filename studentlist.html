@@ -120,7 +120,8 @@
                         const end = start + itemsPerPage;
                         const paginatedStudents = students.slice(start, end);
 
-                        paginatedStudents.forEach(student => {
+                        //paginatedStudents.forEach(student => {
+                        
                         const studentCard = `
                                                 ${paginatedStudents.map((student, index) => `
                                                     <tr>
@@ -136,7 +137,7 @@
                                            
                                     `;
                         $('#studentList').append(studentCard);
-                        });
+                        //});
                     }
 
                     function renderPagination() {
