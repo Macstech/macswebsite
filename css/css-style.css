@@ -1788,6 +1788,7 @@ body::-webkit-scrollbar-thumb {
           transform: translateY(-50%);
 }
 #preloader .preloader-logo img {
+  width: 250px;
   -webkit-animation: TXTImgIn 1500ms ease-in-out infinite;
           animation: TXTImgIn 1500ms ease-in-out infinite;
 }
@@ -1962,7 +1963,6 @@ a:hover, a:focus {
   font-size: 44px;
   font-weight: 700;
   line-height: 1.223;
-  color: #ffffff;
   
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), only screen and (min-width: 576px) and (max-width: 767px), (max-width: 767px) {
